@@ -1,0 +1,55 @@
+<h1 mat-dialog-tittle>Ingresar Nuevo Alumno</h1>
+<div mat-dialog-content>
+    <mat-form-field>
+        
+        <div>
+            <mat-label>Nombres</mat-label>
+            <input matInput [(ngModel)]="nombres" type="text">
+            <!--type="text"-->
+           <!--  {{CodAlumno}} --> 
+
+        </div>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+    
+        <div>
+            <mat-label>Apellidos</mat-label>
+            <input matInput [(ngModel)]="apellidos" type="text">
+            <!--type="text"-->
+           <!--  {{CodAlumno}} --> 
+
+        </div>
+      
+    </mat-form-field>
+    <br>
+    <mat-form-field>  
+        <div>
+            <mat-label>Código</mat-label>
+            <input matInput [(ngModel)]="codAlumno" type="number">
+            <!--type="text"-->
+           <!--  {{CodAlumno}} --> 
+
+        </div>
+
+       
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <div>
+            <mat-label>Fecha de Ingreso</mat-label>
+            <input matInput [(ngModel)]="fechaIngreso" type="date" max="2021-01-21" min= "2020-06-20">
+            <!--type="text"-->
+            <br>
+            {{fechaIngreso}}
+          <!-- {{fechaIngreso}} -->  
+        </div>
+    </mat-form-field>
+
+</div>
+
+<div mat-dialog-actions>
+    <button mat-raised-button color="warn" (click)="close()">Cancelar</button>
+    <button mat-raised-button color="primary" (click)="addAlumno()">Guardar</button>
+
+</div>
